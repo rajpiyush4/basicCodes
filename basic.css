@@ -35,3 +35,46 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+
+.inputvol {
+    /* -webkit-appearance: none; */
+    position: absolute;
+    top: 70%;
+    opacity: 0.5;
+    transform: scale(0.7, 0.7 )  translate(0,3px);
+    display: none;
+    appearance: none;
+    cursor: pointer;
+
+}
+
+input[type=range]::-webkit-range-thumb {
+    --webkit-appearance: none; 
+    background-color: green;
+  }
+
+
+ input[type=range]::-webkit-slider-runnable-track {
+    height: 1px;
+    background: #232;
+    border: none;
+    border-radius: 3px;
+ }
+ input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 10px;
+    border-radius: 3px;
+    background: hsl(76, 74%, 20%);
+    /* margin-top: -4px; */
+    transform: translate(0,-50%);
+ }
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
